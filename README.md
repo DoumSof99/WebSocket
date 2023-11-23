@@ -1,5 +1,8 @@
 # WebSocket_ClientSide
 how to write a simple WebSocket client in C# using the WebSocketSharp library.
 
-1) in the vs code I open the server-echo project and in the PowerShell, I go to this path an run:
+1) in the vs code I open the server-echo project and in the PowerShell, I go to this path and run:
 ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/899632e2-f8e3-4a7d-ba77-226e72400bab)
+2) That means the server started, and I can open this WebSocket Client (Chrome extension): chrome-extension://gobngblklhkgmjhbpbdlkglbhhlafjnh/index.html
+3) In 2 tabs, I can see the messages passed from one client sent to the server, and the server sends this to every other client.
+4) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/e91ce2b7-c7ce-4e52-aa44-b2d11b0cb78d)
