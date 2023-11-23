@@ -17,9 +17,9 @@ wsServer.on('connection', function (socket) {
         console.log('Recieve message from the client: ' + msg);
         
         //Sends the message from the server to the client
-        //socket.send("Echo: " + msg);
+        // socket.send("Echo: " + msg);
 
-        //Broadcast that message to all connected clients
+        // Broadcast that message to all connected clients
         wsServer.clients.forEach( function (client) {
             client.send("Another client send: " + msg);
         });
