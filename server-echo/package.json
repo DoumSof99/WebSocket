@@ -1,0 +1,22 @@
+{
+  "name": "server-echo",
+  "version": "1.0.0",
+  "description": "Web Socket",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoumSof99/WebSocket.git"
+  },
+  "author": "Sofia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoumSof99/WebSocket/issues"
+  },
+  "homepage": "https://github.com/DoumSof99/WebSocket#readme",
+  "dependencies": {
+    "ws": "^8.14.2"
+  }
+}
