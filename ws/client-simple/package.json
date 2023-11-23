@@ -1,0 +1,14 @@
+{
+  "name": "client-simple",
+  "version": "1.0.0",
+  "description": "simple client",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sofia",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.14.2"
+  }
+}
