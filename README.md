@@ -8,4 +8,7 @@ how to write a simple WebSocket client in C# using the WebSocketSharp library.
 4) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/e91ce2b7-c7ce-4e52-aa44-b2d11b0cb78d)
 5) now that a simple client is created in the js we can call and receive messages from one client to the server and to the other client.
 6) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/792e8866-50ec-4df6-b09e-fe6b36c2bcb5)
+7) By connection to the site Glitch, it can host and share the project online https://glitch.com/dashboard, add the server there, and correct some things, finally, it does what it was doing before but it can be shared.
+   ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/4e7fcc08-2930-4c5d-bc07-a299ad8290c1)
+
 
