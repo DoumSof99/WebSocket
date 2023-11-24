@@ -1,5 +1,6 @@
-# WebSocket_ClientSide
-how to write a simple WebSocket client in C# using the WebSocketSharp library.
+# WebSocket
+- how to write a simple WebSocket locally in js, both the client and server side.
+- how to upload the server into a cloud, share it, and use it on the open web.
 
 1) in the vs code I open the server-echo project and in the PowerShell, I go to this path and run:
 ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/899632e2-f8e3-4a7d-ba77-226e72400bab)
