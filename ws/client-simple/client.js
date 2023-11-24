@@ -2,10 +2,10 @@
 const WebSocket = require('ws');
 
 const localServerAddress = "ws://127.0.0.1:5000";
-const couldServerAddress = "https://websocket-server-echo-project.glitch.me/";
+const cloudServerAddress = "https://websocket-server-echo-project.glitch.me/";
 
 // const ws = new WebSocket(localServerAddress);
-const ws = new WebSocket(couldServerAddress, {
+const ws = new WebSocket(cloudServerAddress, {
     headers: {
         "User-Agent": "Brave"
     }

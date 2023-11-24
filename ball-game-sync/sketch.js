@@ -41,9 +41,10 @@ function draw() {
 function mouseClicked() {
   
   setTarget(mouseX, mouseY)
+  sendTargetToServer();
   
-  console.log('New target is: ');
-  console.log(target);
+  // console.log('New target is: ');
+  // console.log(target);
 }
 
 function setTarget(tx, ty){
@@ -53,7 +54,32 @@ function setTarget(tx, ty){
   };
 }
 
+function sendTargetToServer(){
+  let norm = {
+    x: target.x / width,
+    y: target.y / height
+  }
+  let str = JSON.stringify(norm);
+  serverConnection.send(str);
+}
 
+// WebSocket stuff
+const cloudServerAddress = "wss://websocket-server-echo-project.glitch.me/";
 
+const serverConnection = new WebSocket(cloudServerAddress);
 
+serverConnection.onopen = function() {
+  console.log("I just connected from p5 to " + cloudServerAddress);
+  // serverConnection.send('hello from p5')
+
+}
+
+serverConnection.onmessage = function(event) 
+{
+  console.log("Recieved: " + event.data);
+  let obj = JSON.parse(event.data);
+  obj.x *= width;
+  obj.y *= height;
+  target = obj;
+}
 
