@@ -10,6 +10,8 @@
 5) now that a simple client is created in the js we can call and receive messages from one client to the server and to the other client.
 6) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/792e8866-50ec-4df6-b09e-fe6b36c2bcb5)
 7) By connection to the site Glitch, it can host and share the project online https://glitch.com/dashboard, add the server there, and correct some things, finally, it does what it was doing before but it can be shared.
+8) My project: https://websocket-server-echo-project.glitch.me
    ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/4e7fcc08-2930-4c5d-bc07-a299ad8290c1)
-
+9) In the p5.js, I created a ball game where it follows the mouse click here: https://editor.p5js.org/DoumSof99/sketches/3BhfYq67G
+10) 
 
