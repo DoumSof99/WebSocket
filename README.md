@@ -1,6 +1,7 @@
 # WebSocket
 - how to write a simple WebSocket locally in js, both the client and server side.
 - how to upload the server into a cloud, share it, and use it on the open web.
+- create a ball animation game and connect to the glitch server.
 
 1) in the vs code I open the server-echo project and in the PowerShell, I go to this path and run:
 ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/899632e2-f8e3-4a7d-ba77-226e72400bab)
@@ -13,5 +14,5 @@
 8) My project: https://websocket-server-echo-project.glitch.me
    ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/4e7fcc08-2930-4c5d-bc07-a299ad8290c1)
 9) In the p5.js, I created a ball game where it follows the mouse click here: https://editor.p5js.org/DoumSof99/sketches/3BhfYq67G
-10) 
-
+10) In the vs code install the p5.js and the live server. By adding some code the ball game client is connected with the server on glitch.
+11) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/8b3d314b-d8a3-479f-b709-59ec98202b70)
