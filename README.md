@@ -14,5 +14,7 @@
 8) My project: https://websocket-server-echo-project.glitch.me
    ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/4e7fcc08-2930-4c5d-bc07-a299ad8290c1)
 9) In the p5.js, I created a ball game where it follows the mouse click here: https://editor.p5js.org/DoumSof99/sketches/3BhfYq67G
-10) In the vs code install the p5.js and the live server. By adding some code the ball game client is connected with the server on glitch.
+10) In the vs code install the p5.js and the live server. By adding some code the ball game client is connected with the server on the glitch.
 11) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/8b3d314b-d8a3-479f-b709-59ec98202b70)
+12) Created a new project in the Glitch (Website), named it ball-game-sync, then deleted everything from the files and copied - pasted mine. So now the ball game is hosted on the Glitch or static. (https://glitch.com/edit/#!/ball-game-sync)
+13) 
