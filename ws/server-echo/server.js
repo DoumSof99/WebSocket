@@ -19,10 +19,10 @@ wsServer.on('connection', function (socket) {
         //Sends the message from the server to the client
         // socket.send("Echo: " + msg);
 
-        // Broadcast that message to all connected clients
-        wsServer.clients.forEach( function (client) {
-            client.send("Another client send: " + msg);
-        });
+        //Broadcast that message to all connected clients
+        // wsServer.clients.forEach( function (client) {
+        //     client.send("Another client send: " + msg);
+        // });
     });
 });
 
