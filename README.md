@@ -2,6 +2,7 @@
 - how to write a simple WebSocket locally in js, both the client and server side.
 - how to upload the server into a cloud, share it, and use it on the open web.
 - create a ball animation game and connect to the glitch server.
+- Creates a processing sketch that communicates with the WebSocket server and synchronizes data.
 
 1) in the vs code I open the server-echo project and in the PowerShell, I go to this path and run:
 ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/899632e2-f8e3-4a7d-ba77-226e72400bab)
@@ -16,8 +17,7 @@
 9) In the p5.js, I created a ball game where it follows the mouse click here: https://editor.p5js.org/DoumSof99/sketches/3BhfYq67G
 10) In the vs code install the p5.js and the live server. By adding some code the ball game client is connected with the server on the glitch.
 11) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/8b3d314b-d8a3-479f-b709-59ec98202b70)
-12) Created a new project in the Glitch (Website), named it ball-game-sync, then deleted everything from the files and copied - pasted mine. So now the ball game is hosted on the Glitch or static. (https://glitch.com/edit/#!/ball-game-sync)
-13) Created a processing sketch that communicates with the WebSocket server and synchronizes data.
-14) Downloaded processor, and then connected it to my local server and then to my glitch server. Needed to add 2 libs from https://github.com/ParametricCamp/TutorialFiles/tree/master/Misc/WebSockets/procesing_websocket_client repo and also add an additional one .jar lib to the processor's path.
-15) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/1ade8d5d-5db9-495c-b344-d5e577193da6)
-16) So now there are 2 different projects (p5.js in vs code and the processor) connected to the glitch server and each one sends the coordinates to the other.
+12) Created a new project in the Glitch (Website), named it ball-game-sync, then deleted everything from the files and copied - pasted mine. So now the ball game is hosted/is static on the Glitch. (https://glitch.com/edit/#!/ball-game-sync)
+13) Downloaded processor, and then connected it to my local server and then to my glitch server. Needed to add 2 libs from https://github.com/ParametricCamp/TutorialFiles/tree/master/Misc/WebSockets/procesing_websocket_client repo and also add an additional one .jar lib to the processor's path.
+14) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/1ade8d5d-5db9-495c-b344-d5e577193da6)
+15) So now there are 2 different projects (p5.js in vs code and the processor) connected to the glitch server and each one sends the coordinates to the other.
