@@ -33,8 +33,8 @@ function draw() {
   circle(pos.x, pos.y, 20);
   
   // Ease position into target
-  pos.x += EASING_SPEED * (target.x - pos.x)
-  pos.y += EASING_SPEED * (target.y - pos.y)
+  pos.x += EASING_SPEED * (target.x - pos.x);
+  pos.y += EASING_SPEED * (target.y - pos.y);
   
 }
 
