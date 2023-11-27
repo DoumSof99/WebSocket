@@ -19,3 +19,5 @@
 12) Created a new project in the Glitch (Website), named it ball-game-sync, then deleted everything from the files and copied - pasted mine. So now the ball game is hosted on the Glitch or static. (https://glitch.com/edit/#!/ball-game-sync)
 13) Created a processing sketch that communicates with the WebSocket server and synchronizes data.
 14) Downloaded processor, and then connected it to my local server and then to my glitch server. Needed to add 2 libs from https://github.com/ParametricCamp/TutorialFiles/tree/master/Misc/WebSockets/procesing_websocket_client repo and also add an additional one .jar lib to the processor's path.
+15) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/1ade8d5d-5db9-495c-b344-d5e577193da6)
+16) So now there are 2 different projects (p5.js in vs code and the processor) connected to the glitch server and each one sends the coordinates to the other.
