@@ -3,6 +3,7 @@
 - how to upload the server into a cloud, share it, and use it on the open web.
 - create a ball animation game and connect to the glitch server.
 - Creates a processing sketch that communicates with the WebSocket server and synchronizes data.
+- Create a client in C# and connect with the Glitch server.
 
 1) in the vs code I open the server-echo project and in the PowerShell, I go to this path and run:
 ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/899632e2-f8e3-4a7d-ba77-226e72400bab)
@@ -21,3 +22,5 @@
 13) Downloaded processor, and then connected it to my local server and then to my glitch server. Needed to add 2 libs from https://github.com/ParametricCamp/TutorialFiles/tree/master/Misc/WebSockets/procesing_websocket_client repo and also add an additional one .jar lib to the processor's path.
 14) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/1ade8d5d-5db9-495c-b344-d5e577193da6)
 15) So now there are 2 different projects (p5.js in vs code and the processor) connected to the glitch server and each one sends the coordinates to the other.
+16) Now in C# I installed the Nuget package WebSocket-sharp and connected with my Glitch server: https://glitch.com/edit/#!/websocket-server-echo-project?path=server.js%3A22%3A20
+17) 
