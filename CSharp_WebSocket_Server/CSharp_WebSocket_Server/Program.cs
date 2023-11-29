@@ -15,9 +15,19 @@ namespace CSharp_WebSocket_Server
     {
         protected override void OnMessage(MessageEventArgs e)
         {
-            base.OnMessage(e);
-            Console.WriteLine("Recieved msg from client in C# server " + e.Data);
+            //base.OnMessage(e);
+            Console.WriteLine("Recieved msg from echo client in C# server " + e.Data);
             Send("Send " + e.Data);
+        }
+    }
+
+    public class EchoToAllClients : WebSocketBehavior
+    {
+        protected override void OnMessage(MessageEventArgs e)
+        {
+            //base.OnMessage(e);
+            Console.WriteLine("Recieved msg from echoAll client in C# server " + e.Data);
+            Sessions.Broadcast("Send all " + e.Data);
         }
     }
 
@@ -28,10 +38,11 @@ namespace CSharp_WebSocket_Server
             WebSocketServer server = new WebSocketServer("ws://127.0.0.1:4561");
 
             // Route
-            server.AddWebSocketService<Echo>("/Echo");
+            //server.AddWebSocketService<Echo>("/Echo");
+            server.AddWebSocketService<EchoToAllClients>("/EchoAll");
 
             server.Start();
-            Console.WriteLine("Server started from C#");
+            Console.WriteLine("Server started from C# on ws://127.0.0.1:4561/EchoAll");
 
             Console.ReadKey();
             server.Stop();

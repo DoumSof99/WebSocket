@@ -15,7 +15,7 @@ namespace WebSocket_Client
 
             // create a scoped instance of a websocket client and then it will be displosed
             //using (WebSocket ws = new WebSocket("ws://websocket-server-echo-project.glitch.me"))
-            using (WebSocket ws = new WebSocket("ws://127.0.0.1:4561/Echo"))
+            using (WebSocket ws = new WebSocket("ws://127.0.0.1:4561/EchoAll")) //Echo
             {
                 ws.OnMessage += Ws_OnMessage;
 
