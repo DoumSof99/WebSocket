@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebSocketSharp;
+using Newtonsoft.Json;
 
 namespace WebSocket_Client
 {
@@ -26,6 +27,23 @@ namespace WebSocket_Client
         private static void Ws_OnMessage(object sender, MessageEventArgs e)
         {
             Console.WriteLine("Message from the server: " + e.Data);
+
+            try
+            {
+                Vector pos = JsonConvert.DeserializeObject<Vector>(e.Data);
+                Console.WriteLine("The vector is: " + pos.x + ", " + pos.y);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
+
+    public class Vector
+    {
+        public double x { get; set; }
+        public double y { get; set; }
+    }
+
 }
