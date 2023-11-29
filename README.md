@@ -24,4 +24,5 @@
 15) So now there are 2 different projects (p5.js in vs code and the processor) connected to the glitch server and each one sends the coordinates to the other.
 16) Now in C# I installed the Nuget package WebSocket-sharp and connected with my Glitch server: https://glitch.com/edit/#!/websocket-server-echo-project?path=server.js%3A22%3A20
 17) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/97651ede-222e-40f2-9020-89ddb42f8991)
-18) 
+18) From the above image, I will deserialize the numbers from the C# console, and by extracting these numbers we will draw something on the C# console.
+19) 
