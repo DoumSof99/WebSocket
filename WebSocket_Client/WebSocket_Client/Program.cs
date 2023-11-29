@@ -12,13 +12,14 @@ namespace WebSocket_Client
     {
         static void Main(string[] args)
         {
+            
             // create a scoped instance of a websocket client and then it will be displosed
             using (WebSocket ws = new WebSocket("ws://websocket-server-echo-project.glitch.me"))
             {
                 ws.OnMessage += Ws_OnMessage;
 
                 ws.Connect();
-                ws.Send("Hello from C#");
+                ws.Send("Hello from C#"); // this throws error because is not a JSON 
 
                 Console.ReadKey();
             }
@@ -31,12 +32,42 @@ namespace WebSocket_Client
             try
             {
                 Vector pos = JsonConvert.DeserializeObject<Vector>(e.Data);
-                Console.WriteLine("The vector is: " + pos.x + ", " + pos.y);
+                //Console.WriteLine("The vector is: " + pos.x + ", " + pos.y);
+                DrawDot(pos.x, pos.y, 50, 15, 1);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
             }
+        }
+
+        private static void DrawDot(double xPos, double yPos, int width, int height, int borderWidth)
+        {
+            // Convert from normalize coordinate to "Character" to "pixel" coordinates
+            int x = (int)Math.Round(xPos * width);
+            int y = (int)Math.Round(yPos * height);
+
+            for (int j = 0; j < height; j++)
+            {
+                for (int i = 0; i < width; i++)
+                {
+                    if (i == x && j == y)
+                    {
+                        Console.Write("0");
+                    }
+                    else if (j < borderWidth || j > height - 1 - borderWidth 
+                        || i < borderWidth || i > width - 1 - borderWidth)
+                    {
+                        Console.Write("#");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
         }
     }
 
@@ -44,6 +75,6 @@ namespace WebSocket_Client
     {
         public double x { get; set; }
         public double y { get; set; }
-    }
+    }   
 
 }
