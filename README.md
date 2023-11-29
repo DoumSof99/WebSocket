@@ -27,4 +27,7 @@
 18) From the above image, I will deserialize the numbers from the C# console, and by extracting these numbers we will draw something on the C# console.
 19) Below is an image of the server in C# (left) and a client in C# (Right), but this is a 1-1 relation, which means if I open another client, these 2 clients cannot interact together but only with the server.
 20) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/1a9a5603-477e-4293-ad40-08ddc9f06097)
+21) In the below image, the server is getting a message from one client and is able to share it with the rest in C#.
+22) ![image](https://github.com/DoumSof99/WebSocket/assets/71881384/af5b33de-c29e-4fdf-8769-f53ccca6b37b)
+
 
